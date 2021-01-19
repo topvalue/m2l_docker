@@ -1,6 +1,6 @@
 #!/bin/bash
 git init -qqq
-git remote add origin git@github.com:topvalue/m2_docker-test.git
+git remote add origin git@github.com:topvalue/m2l_docker.git
 git fetch origin -qqq
 git checkout origin/master -- compose
 mv compose/* ./

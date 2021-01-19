@@ -42,7 +42,7 @@ This configuration has been tested on Mac & Linux. Windows is supported through 
 Run this automated one-liner from the directory you want to install your project to:
 
 ```bash
-curl -s https://raw.githubusercontent.com/topvalue/m2_docker-test/master/lib/onelinesetup | bash -s -- magento2.dev 2.3.4
+curl -s https://raw.githubusercontent.com/topvalue/m2l_docker/main/lib/onelinesetup | bash -s -- magento2.dev 2.3.4
 ```
 
 The `magento2.dev` above defines the hostname to use, and the `2.3.4` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
@@ -57,7 +57,7 @@ Same result as the one-liner above. Just replace `magento2.dev` references with 
 
 ```bash
 # Download the Docker Compose template:
-curl -s https://raw.githubusercontent.com/topvalue/m2_docker-test/master/lib/template | bash
+curl -s https://raw.githubusercontent.com/topvalue/m2l_docker/main/lib/template | bash
 
 # Download the version of Magento you want to use with:
 bin/download 2.3.4
@@ -87,7 +87,7 @@ open https://magento2.dev
 
 ```bash
 # Download the Docker Compose template:
-curl -s https://raw.githubusercontent.com/topvalue/m2_docker-test/master/lib/template | bash
+curl -s https://raw.githubusercontent.com/topvalue/m2l_docker/main/lib/template | bash
 
 # Remove existing src directory:
 rm -rf src

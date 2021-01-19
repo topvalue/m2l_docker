@@ -2,7 +2,7 @@
 DOMAIN=${1:-magento2.dev}
 VERSION=${2:-2.3.3}
 
-curl -s https://raw.githubusercontent.com/topvalue/m2_docker-test/master/lib/template | bash
+curl -s https://raw.githubusercontent.com/topvalue/m2l_docker/main/lib/template | bash
 bin/download $VERSION
 
 echo "Your system password has been requested to add an entry to /etc/hosts..."
