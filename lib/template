@@ -1,0 +1,9 @@
+#!/bin/bash
+git init -qqq
+git remote add origin git@github.com:topvalue/m2_docker-test.git
+git fetch origin -qqq
+git checkout origin/master -- compose
+mv compose/* ./
+mv compose/.vscode ./
+rm -rf compose .git
+git init
