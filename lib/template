@@ -2,7 +2,7 @@
 git init -qqq
 git remote add origin git@github.com:topvalue/m2l_docker.git
 git fetch origin -qqq
-git checkout origin/master -- compose
+git checkout origin/main -- compose
 mv compose/* ./
 mv compose/.vscode ./
 rm -rf compose .git
